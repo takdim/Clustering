@@ -51,10 +51,10 @@ Berikut adalah algoritma cluster hirarki agglomerative:
 ## DB SCAN  
 *Algoritma Density-based Spatial Clustering of Application with Noise (DBSCAN)* merupakan metode *clustering* yang berbasis kepadatan (*density-based*) dari posisi amatan data dengan prinsip mengelompokkan data yang relatif berdekatan. DBSCAN sering diterapkan pada data yang banyak mengandung *noise*, hal ini dikarenakan DBSCAN tidak akan memasukkan data yang dianggap *noise* kedalam *cluster* manapun.  
 Dalam proses pembuatan *cluster* menggunakan DBSCAN sebuah data akan dikelompokkan dengan tetangganya. Sepasang amatan dikatakan bertetangga apabila jarak antara dua amatan tersebut kurang dari sama dengan nilai *epsilon*. Secara sederhana cara kerja DBSCAN adalah sebagai berikut :
-1. Tentukan nilai minPts dan epsilon (eps) yang akan digunakan.
-2. Pilih data awal “p” secara acak.
-3. Hitung jarak antara data “p” terhadap semua data menggunakan *Euclidian distance*.
-4. Ambil semua amatan yang *density-reachable* dengan amatan “*p*”.
+1. Tentukan nilai minPts dan epsilon (eps) yang akan digunakan.  
+2. Pilih data awal “p” secara acak.  
+3. Hitung jarak antara data “p” terhadap semua data menggunakan *Euclidian distance*.  
+4. Ambil semua amatan yang *density-reachable* dengan amatan “*p*”.  
 5. Jika amatan yang memenuhi nilai *epsilon* lebih dari jumlah minimal amatan dalam satu gerombol maka amatan “*p*” dikategorikan sebagai *core points* dan gerombol terbentuk.
-6. Jika amatan “p” adalah border points dan tidak ada amatan yang density-reachable dengan amatan “*p*”, maka lanjutkan pada amatan lainnya.
-7. Ulangi langkah 3 sampai 6 hingga semua amatan diproses.
+6. Jika amatan “p” adalah border points dan tidak ada amatan yang density-reachable dengan amatan “*p*”, maka lanjutkan pada amatan lainnya.  
+7. Ulangi langkah 3 sampai 6 hingga semua amatan diproses.  
